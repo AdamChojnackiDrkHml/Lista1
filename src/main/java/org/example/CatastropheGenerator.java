@@ -10,7 +10,7 @@ public class CatastropheGenerator
     private final String[] whereIsItGoingToDoThis = {"Kraśnik", "Ziemię", "Polskę", "USA", "lokalny ZUS", "Świdnicę", "Szopę Pana Wojtka", "Polską Gospodarkę", "Moje marzenia o stypendium", "Okręg trzech stanów"};
     private final String[][] generatorArrays = {whatTheThingIsLike, whatItIs, whatIsItGoingToDo, whereIsItGoingToDoThis};
     Random randomizer = new Random();
-    int asdg = 53;
+    int asdg = 52;
 
     public String generateTheCatastrophe()
     {
