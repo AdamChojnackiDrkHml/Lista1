@@ -6,20 +6,21 @@ import java.util.Scanner;
  * Hello world!
  *
  */
-public class App 
+public class BaseClass
 {
-    public static void main( String[] args )
+    public static void main(final String[] args )
     {
-        Scanner scanner = new Scanner(System.in);
-        VeryStrangeMathDoingMachine isThereAnyHope = new VeryStrangeMathDoingMachine();
+        final Scanner scanner = new Scanner(System.in);
+        final VeryStrangeMathDoingMachine findOutOurChances = new VeryStrangeMathDoingMachine();
         System.out.print("Czy chcesz wygenerować katastrofę?\n");
-        while ("TAK".toUpperCase().equals(scanner.next()))
+        while ("TAK".equalsIgnoreCase(scanner.next()))
         {
             System.out.print("\n");
 
-            isThereAnyHope.doWeirdThings();
+            findOutOurChances.doWeirdThings();
 
             System.out.print("\nCzy chcesz wygenerować kolejną katastrofę? \nWpisz Tak jeśli chcesz albo cokolwiek innego jeśli nie\n");
         }
+        scanner.close();
     }
 }

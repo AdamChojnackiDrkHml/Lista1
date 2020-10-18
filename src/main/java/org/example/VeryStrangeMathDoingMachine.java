@@ -1,5 +1,6 @@
 package org.example;
 
+
 public class VeryStrangeMathDoingMachine
 {
     CatastropheGenerator generator = new CatastropheGenerator();
@@ -29,7 +30,7 @@ public class VeryStrangeMathDoingMachine
         }
 
     }
-    private boolean doWeirdMath(int number)
+    private boolean doWeirdMath(final int number)
     {
         return ((Math.abs(Math.sin(number)) > generator.randomizer.nextDouble()));
     }
