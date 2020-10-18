@@ -70,6 +70,15 @@
           <version>3.0.0</version>
         </plugin>
       </plugins>
+
     </pluginManagement>
+
   </build>
+  <distributionManagement>
+      <repository>
+        <id>example-repo</id>
+        <name>Example Repository</name>
+        <url>file://C:\Users\Adam\Desktop\Fizyka sportu</url>
+      </repository>
+  </distributionManagement>
 </project>

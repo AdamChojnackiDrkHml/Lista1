@@ -2,24 +2,20 @@ package org.example;
 
 import java.util.Scanner;
 
-/**
- * Hello world!
- *
- */
 public class BaseClass
-{
-    public static void main(final String[] args )
+{//NOPMD
+    public static void main(final String[] args)
     {
-        final Scanner scanner = new Scanner(System.in);
-        final VeryStrangeMathDoingMachine findOutOurChances = new VeryStrangeMathDoingMachine();
-        System.out.print("Czy chcesz wygenerować katastrofę?\n");
+        final Scanner scanner = new Scanner(System.in);//NOPMD
+        final VeryStrangeMathDoingMachine findOutOurChances = new VeryStrangeMathDoingMachine();//NOPMD
+        System.out.print("Czy chcesz wygenerować katastrofę?\n");//NOPMD
         while ("TAK".equalsIgnoreCase(scanner.next()))
         {
-            System.out.print("\n");
+            System.out.print("\n");//NOPMD
 
             findOutOurChances.doWeirdThings();
 
-            System.out.print("\nCzy chcesz wygenerować kolejną katastrofę? \nWpisz Tak jeśli chcesz albo cokolwiek innego jeśli nie\n");
+            System.out.print("\nCzy chcesz wygenerować kolejną katastrofę? \nWpisz Tak jeśli chcesz albo cokolwiek innego jeśli nie\n");//NOPMD
         }
         scanner.close();
     }

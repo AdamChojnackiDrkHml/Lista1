@@ -1,37 +1,39 @@
 package org.example;
 
 
-public class VeryStrangeMathDoingMachine
+public class VeryStrangeMathDoingMachine//NOPMD
 {
-    CatastropheGenerator generator = new CatastropheGenerator();
-    char[] weirdArray;
-    int sum;
+    private final transient CatastropheGenerator generator = new CatastropheGenerator();
+
     public void doWeirdThings()
     {
 
-        String catastrophe = generator.generateTheCatastrophe();
-        System.out.println(catastrophe);
+        final String catastrophe = generator.generateTheCatastrophe();
+        System.out.println(catastrophe);//NOPMD
 
-        weirdArray = catastrophe.toCharArray();
-        sum = 0;
+        final char[] weirdArray = catastrophe.toCharArray();//NOPMD
+        int sum = 0;
 
-        for (char c : weirdArray)
+        for (final char c : weirdArray)
         {
             sum += c;
         }
 
-        if(doWeirdMath(sum))
+        if (doWeirdMath(sum))
         {
-            System.out.print("Nie ma szans na ratunek, to jest już koniec, nie ma już nic, wszyscy przegraliśmy, możemy iść\n");
+            System.out.print("Nie ma szans na ratunek, to jest już koniec, nie ma już nic, wszyscy przegraliśmy, możemy iść\n");//NOPMD
         }
         else
         {
-            System.out.print("Magiczne pancerniki przybyły z piątej gęstości i ponownie uratowały Ziemię, cieszcie się śmiertelnicy\n");
+            System.out.print("Magiczne pancerniki przybyły z piątej gęstości i ponownie uratowały Ziemię, cieszcie się śmiertelnicy\n");//NOPMD
         }
-
     }
+
+
     private boolean doWeirdMath(final int number)
     {
-        return ((Math.abs(Math.sin(number)) > generator.randomizer.nextDouble()));
+        return ((Math.abs(Math.sin(number)) > generator.randomizer.nextDouble()));//NOPMD
     }
+
+
 }

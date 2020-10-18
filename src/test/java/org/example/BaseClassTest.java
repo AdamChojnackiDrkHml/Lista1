@@ -7,7 +7,7 @@ import org.junit.Test;
 /**
  * Unit test for simple App.
  */
-public class BaseClassTest
+public class BaseClassTest//NOPMD
 {
     /**
      * Rigorous Test :-)
@@ -15,6 +15,8 @@ public class BaseClassTest
     @Test
     public void shouldAnswerWithTrue()
     {
-        assertTrue("Jabadaba", true);
+        assertTrue("Jabadaba", true);//NOPMD
     }
+
+
 }
