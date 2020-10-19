@@ -3,7 +3,7 @@ package org.example;
 
 public class VeryStrangeMathDoingMachine//NOPMD
 {
-    private final transient CatastropheGenerator generator = new CatastropheGenerator();
+    private final CatastropheGenerator generator = new CatastropheGenerator();
 
     public void doWeirdThings()
     {
